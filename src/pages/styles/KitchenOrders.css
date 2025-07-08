@@ -1,0 +1,46 @@
+.kitchen-orders-bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0e7ff 0%, #f0fff4 100%);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 40px 0;
+}
+.kitchen-orders-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  padding: 32px 36px;
+  min-width: 700px;
+  max-width: 900px;
+}
+.kitchen-orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 18px;
+}
+.kitchen-orders-table th, .kitchen-orders-table td {
+  border: 1px solid #e5e7eb;
+  padding: 10px 12px;
+  text-align: left;
+}
+.kitchen-orders-table th {
+  background: #f3f4f6;
+  font-weight: 600;
+}
+.kitchen-orders-table tr:nth-child(even) {
+  background: #f9fafb;
+}
+.kitchen-orders-table button {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 14px;
+  cursor: pointer;
+  margin-right: 8px;
+  font-size: 1rem;
+}
+.kitchen-orders-table button:hover {
+  background: #1d4ed8;
+}

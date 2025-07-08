@@ -1,0 +1,362 @@
+.about-page {
+  min-height: 100vh;
+  background: #f8f9fa;
+  padding-top: 80px; /* Account for fixed navbar */
+}
+
+/* Hero Section */
+.about-hero {
+  background: linear-gradient(135deg, #2e7d32 0%, #81c784 50%, #4caf50 100%);
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+  position: relative;
+}
+
+.about-hero-content h1 {
+  font-size: 3.5rem;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.about-hero-content p {
+  font-size: 1.3rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Story Section */
+.about-story {
+  padding: 80px 0;
+  background: white;
+}
+
+.about-story-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.about-story-content h2 {
+  font-size: 2.5rem;
+  font-family: 'Playfair Display', serif;
+  color: #1a1a1a;
+  margin-bottom: 40px;
+}
+
+.story-text {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.story-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+/* Locations Section */
+.about-locations {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  color: white;
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-locations::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(212, 175, 55, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.about-locations-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.about-locations-content h2 {
+  font-size: 3rem;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 15px;
+  color: #d4af37;
+}
+
+.locations-subtitle {
+  font-size: 1.2rem;
+  color: #cccccc;
+  margin-bottom: 50px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.locations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.location-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 20px;
+  padding: 40px;
+  text-align: left;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.location-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(212, 175, 55, 0.6);
+  box-shadow: 0 15px 30px rgba(212, 175, 55, 0.2);
+}
+
+.location-card h3 {
+  font-size: 1.8rem;
+  font-family: 'Playfair Display', serif;
+  color: #d4af37;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.location-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.location-info h4 {
+  font-size: 1.1rem;
+  color: #d4af37;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.location-info p {
+  color: #e0e0e0;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.location-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.feature {
+  background: rgba(212, 175, 55, 0.2);
+  color: #d4af37;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+/* Values Section */
+.about-values {
+  background: white;
+  padding: 80px 0;
+}
+
+.about-values-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.about-values-content h2 {
+  font-size: 2.5rem;
+  font-family: 'Playfair Display', serif;
+  color: #1a1a1a;
+  margin-bottom: 50px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.value-card {
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 15px;
+  padding: 40px 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-color: #d4af37;
+}
+
+.value-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.value-card h3 {
+  font-size: 1.5rem;
+  font-family: 'Playfair Display', serif;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+}
+
+.value-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* CTA Section */
+.about-cta {
+  background: linear-gradient(135deg, #d4af37, #b8941f);
+  color: #1a1a1a;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.about-cta-content h2 {
+  font-size: 2.5rem;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+}
+
+.about-cta-content p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.9;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.menu-btn, .reserve-btn, .call-btn {
+  background: #1a1a1a;
+  color: #d4af37;
+  padding: 15px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  border: 2px solid #1a1a1a;
+  min-width: 150px;
+  display: inline-block;
+}
+
+.menu-btn:hover, .reserve-btn:hover, .call-btn:hover {
+  background: transparent;
+  color: #1a1a1a;
+  border-color: #1a1a1a;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(26, 26, 26, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .about-story-content h2,
+  .about-values-content h2,
+  .about-cta-content h2 {
+    font-size: 2rem;
+  }
+  
+  .about-locations-content h2 {
+    font-size: 2.5rem;
+  }
+  
+  .locations-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .location-card {
+    padding: 30px 20px;
+  }
+  
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .menu-btn, .reserve-btn, .call-btn {
+    width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-page {
+    padding-top: 70px;
+  }
+  
+  .about-hero {
+    padding: 60px 0;
+  }
+  
+  .about-story,
+  .about-locations,
+  .about-values,
+  .about-cta {
+    padding: 60px 0;
+  }
+  
+  .location-card h3 {
+    font-size: 1.5rem;
+  }
+  
+  .location-features {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .feature {
+    width: 80%;
+    text-align: center;
+  }
+  
+  .value-card {
+    padding: 30px 20px;
+  }
+}

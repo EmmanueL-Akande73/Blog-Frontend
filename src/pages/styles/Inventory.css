@@ -1,0 +1,75 @@
+.inventory-section {
+  margin-top: 2.5rem;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  padding: 2rem 2.5rem 2.5rem 2.5rem;
+}
+.inventory-header {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #6a5acd;
+  margin-bottom: 1.2rem;
+}
+.inventory-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(106,90,205,0.07);
+}
+.inventory-table th, .inventory-table td {
+  padding: 1rem 0.7rem;
+  text-align: left;
+  border-bottom: 1px solid #f0f0f0;
+}
+.inventory-table th {
+  background: #f7f8fa;
+  color: #6a5acd;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+.inventory-table tr:last-child td {
+  border-bottom: none;
+}
+.inventory-table td {
+  font-size: 1rem;
+  color: #333;
+}
+.inventory-table .na {
+  color: #aaa;
+  font-style: italic;
+}
+.inventory-edit-input {
+  width: 60px;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  text-align: center;
+}
+.inventory-edit-btn {
+  margin-left: 0.5rem;
+  padding: 0.3rem 0.8rem;
+  background: #6a5acd;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background 0.2s;
+}
+.inventory-edit-btn:hover {
+  background: #483d8b;
+}
+@media (max-width: 900px) {
+  .inventory-section {
+    padding: 1rem;
+  }
+  .inventory-table th, .inventory-table td {
+    padding: 0.5rem 0.3rem;
+    font-size: 0.95rem;
+  }
+}

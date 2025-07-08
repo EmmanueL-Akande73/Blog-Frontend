@@ -1,0 +1,463 @@
+.customer-reservations {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.reservations-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.reservations-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+}
+
+.reservations-header p {
+  font-size: 1.1rem;
+  color: #666;
+  margin: 0;
+}
+
+.reservation-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #f3f4f6;
+}
+
+.tab-button {
+  background: none;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #666;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.tab-button:hover {
+  color: #4ade80;
+}
+
+.tab-button.active {
+  color: #4ade80;
+  border-bottom-color: #4ade80;
+  font-weight: 600;
+}
+
+/* New Reservation Section */
+.new-reservation-section {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.reservation-form-container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  border: 1px solid #e5e7eb;
+}
+
+.reservation-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #374151;
+  font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 0.75rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #4ade80;
+  box-shadow: 0 0 0 3px rgba(74, 222, 128, 0.1);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.submit-button {
+  background: #4ade80;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.submit-button:hover:not(:disabled) {
+  background: #22c55e;
+}
+
+.submit-button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* Payment Method Selection Styles */
+.form-group select[id="paymentMethod"] {
+  background: white;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 0.75rem;
+  font-size: 1rem;
+  color: #374151;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.form-group select[id="paymentMethod"]:focus {
+  outline: none;
+  border-color: #4ade80;
+  box-shadow: 0 0 0 3px rgba(74, 222, 128, 0.1);
+}
+
+.form-group select[id="paymentMethod"]:required:invalid {
+  border-color: #f87171;
+}
+
+/* Deposit Information Styles */
+.deposit-info {
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, #fef3c7 0%, #fed7aa 100%);
+  border: 1px solid #4ade80;
+  border-radius: 12px;
+  padding: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.deposit-info::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #4ade80, #22c55e, #4ade80);
+}
+
+.deposit-notice h4 {
+  margin: 0 0 0.75rem 0;
+  color: #15803d;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.deposit-notice p {
+  margin: 0.5rem 0;
+  color: #166534;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.deposit-notice p:last-child {
+  font-weight: 600;
+  color: #15803d;
+  margin-top: 0.75rem;
+}
+
+/* Existing Reservations Section */
+.existing-reservations-section {
+  min-height: 400px;
+}
+
+.loading-spinner {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.no-reservations {
+  text-align: center;
+  padding: 3rem;
+}
+
+.no-reservations-content h3 {
+  font-size: 1.5rem;
+  color: #374151;
+  margin-bottom: 1rem;
+}
+
+.no-reservations-content p {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.create-first-button {
+  background: #4ade80;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.create-first-button:hover {
+  background: #22c55e;
+}
+
+.reservations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.reservation-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e5e7eb;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.reservation-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.reservation-header {
+  padding: 1rem;
+  background: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reservation-id {
+  font-weight: 600;
+  color: #374151;
+  font-size: 0.9rem;
+}
+
+.reservation-status {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.reservation-details {
+  padding: 1.5rem;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+}
+
+.detail-item:last-child {
+  margin-bottom: 0;
+}
+
+.detail-item.notes {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.detail-label {
+  font-weight: 600;
+  color: #6b7280;
+  font-size: 0.9rem;
+  min-width: 80px;
+}
+
+.detail-value {
+  color: #374151;
+  font-weight: 500;
+  text-align: right;
+  flex: 1;
+}
+
+.detail-item.notes .detail-value {
+  text-align: left;
+  padding: 0.5rem;
+  background: #f9fafb;
+  border-radius: 6px;
+  width: 100%;
+  font-style: italic;
+}
+
+.cancel-button {
+  width: 100%;
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cancel-button:hover:not(:disabled) {
+  background: #dc2626;
+}
+
+.cancel-button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* Messages */
+.error-message {
+  background: #fef2f2;
+  color: #dc2626;
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px solid #fecaca;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.success-message {
+  background: #f0fdf4;
+  color: #166534;
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px solid #bbf7d0;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+/* Payment Status Styles in Reservation Cards */
+.payment-status {
+  padding: 0.25rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-left: 0.5rem;
+}
+
+.payment-status.pending {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.payment-status.completed {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.payment-status.failed {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+/* Detail item enhancement for payment info */
+.detail-item .detail-value .payment-status {
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .customer-reservations {
+    padding: 1rem;
+  }
+  
+  .reservations-header h1 {
+    font-size: 2rem;
+  }
+  
+  .reservation-tabs {
+    flex-direction: column;
+    border-bottom: none;
+  }
+  
+  .tab-button {
+    border-bottom: none;
+    border-right: 3px solid transparent;
+    text-align: left;
+    padding: 0.75rem 1rem;
+  }
+    .tab-button.active {
+    border-right-color: #4ade80;
+    border-bottom-color: transparent;
+    background: #f0fdf4;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .reservations-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .reservation-form-container {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .customer-reservations {
+    padding: 0.5rem;
+  }
+  
+  .reservation-header {
+    padding: 0.75rem;
+  }
+  
+  .reservation-details {
+    padding: 1rem;
+  }
+}

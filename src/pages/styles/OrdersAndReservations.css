@@ -1,0 +1,92 @@
+.orders-and-reservations-page {
+  max-width: 1200px;
+  margin: 32px auto;
+  padding: 32px 24px;
+  background: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%);
+  border-radius: 24px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.08);
+}
+.orders-and-reservations-page h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a3c40;
+  margin-bottom: 32px;
+  text-align: center;
+}
+.section {
+  margin-bottom: 40px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  padding: 24px 20px;
+}
+.section h2 {
+  font-size: 1.5rem;
+  color: #00796b;
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+table.orders-table, table.reservations-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #fafbfc;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+table th, table td {
+  padding: 14px 10px;
+  text-align: left;
+}
+table th {
+  background: #e0f2f1;
+  color: #00695c;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+table tr {
+  border-bottom: 1px solid #e0e0e0;
+}
+table tr:last-child {
+  border-bottom: none;
+}
+table td {
+  font-size: 1rem;
+  color: #333;
+}
+button {
+  background: #00796b;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 7px 18px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-left: 8px;
+}
+button:disabled {
+  background: #b2dfdb;
+  color: #888;
+  cursor: not-allowed;
+}
+@media (max-width: 800px) {
+  .orders-and-reservations-page {
+    padding: 12px 2vw;
+  }
+  .section {
+    padding: 12px 2vw;
+  }
+  table th, table td {
+    padding: 8px 4px;
+    font-size: 0.95rem;
+  }
+  .orders-and-reservations-page h1 {
+    font-size: 2rem;
+  }
+  .section h2 {
+    font-size: 1.2rem;
+  }
+}

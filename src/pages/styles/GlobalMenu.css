@@ -1,0 +1,58 @@
+.global-menu-page {
+  max-width: 1100px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+}
+.global-menu-header {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #6a5acd;
+  margin-bottom: 0.5rem;
+}
+.global-menu-sub {
+  color: #888;
+  margin-bottom: 2rem;
+}
+.global-menu-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(106,90,205,0.07);
+}
+.global-menu-table th, .global-menu-table td {
+  padding: 1rem 0.7rem;
+  text-align: left;
+  border-bottom: 1px solid #f0f0f0;
+}
+.global-menu-table th {
+  background: #f7f8fa;
+  color: #6a5acd;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+.global-menu-table tr:last-child td {
+  border-bottom: none;
+}
+.global-menu-table td {
+  font-size: 1rem;
+  color: #333;
+}
+.global-menu-table .na {
+  color: #aaa;
+  font-style: italic;
+}
+@media (max-width: 900px) {
+  .global-menu-page {
+    padding: 1rem;
+  }
+  .global-menu-table th, .global-menu-table td {
+    padding: 0.5rem 0.3rem;
+    font-size: 0.95rem;
+  }
+}

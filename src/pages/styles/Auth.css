@@ -1,0 +1,28 @@
+.auth-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.success a {
+  color: #0c5460;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.success a:hover {
+  text-decoration: underline;
+}

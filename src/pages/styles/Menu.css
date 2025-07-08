@@ -1,0 +1,249 @@
+.menu-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.menu-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.menu-header h1 {
+  font-size: 3rem;
+  color: #1a1a1a;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 15px;
+}
+
+.menu-header p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.category-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.category-tab {
+  padding: 12px 24px;
+  background: none;
+  border: 2px solid #1a1a1a;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #1a1a1a;
+  transition: all 0.3s ease;
+}
+
+.category-tab:hover {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.category-tab.active {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.menu-section {
+  display: none;
+}
+
+.menu-section.active {
+  display: block;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.menu-item {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+}
+
+.menu-item-image-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.menu-item-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.menu-item:hover .menu-item-image-container img {
+  transform: scale(1.1);
+}
+
+.menu-item-content {
+  padding: 20px;
+}
+
+.menu-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.menu-item-header h3 {
+  font-size: 1.3rem;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.price {
+  color: #d4af37;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.description {
+  color: #666;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.unavailable-badge {
+  display: inline-block;
+  background-color: #dc3545;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.error-message {
+  text-align: center;
+  padding: 20px;
+  color: #dc3545;
+  font-size: 1.2rem;
+}
+
+/* Order button styles */
+.menu-item-actions {
+  margin-top: 15px;
+}
+
+.order-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.order-btn {
+  background: linear-gradient(135deg, #4caf50, #2e7d32);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 120px;
+}
+
+.order-btn:hover:not(:disabled) {
+  background: linear-gradient(135deg, #45a049, #1b5e20);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+}
+
+.order-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.login-to-order-menu-btn {
+  background: linear-gradient(135deg, #ff9800, #f57c00);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 120px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.login-to-order-menu-btn:hover {
+  background: linear-gradient(135deg, #f57c00, #e65100);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 152, 0, 0.3);
+  color: white;
+  text-decoration: none;
+}
+
+.order-success {
+  background: #28a745;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  animation: fadeInSuccess 0.3s ease;
+}
+
+@keyframes fadeInSuccess {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-header h1 {
+    font-size: 2rem;
+  }
+  
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .category-tab {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}

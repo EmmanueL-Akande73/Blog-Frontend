@@ -1,0 +1,52 @@
+.performance-page {
+  max-width: 900px;
+  margin: 32px auto;
+  padding: 32px 24px;
+  background: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%);
+  border-radius: 24px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.08);
+}
+.performance-page h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1a3c40;
+  margin-bottom: 32px;
+  text-align: center;
+}
+.performance-metrics {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.metric-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  padding: 32px 40px;
+  min-width: 220px;
+  text-align: center;
+}
+.metric-card h2 {
+  color: #00796b;
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+}
+.metric-card p {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+}
+@media (max-width: 800px) {
+  .performance-page {
+    padding: 12px 2vw;
+  }
+  .performance-metrics {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .metric-card {
+    padding: 18px 8vw;
+    min-width: unset;
+  }
+}
